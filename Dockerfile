@@ -8,7 +8,7 @@ RUN apt-get update && \
 
 # Copy the Nginx config
 COPY default /etc/nginx/sites-available/default
-COPY mysourcecode/App.js /APP
+#COPY mysourcecode/App.js /APP
 
 # Expose the port for access
 EXPOSE 80/tcp
