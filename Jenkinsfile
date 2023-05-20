@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t rogertubogjr/jenkins-docker-hub:nginx-devops-v$BUILD_NUMBER '
+        sh 'docker build -t rogertubogjr/jenkins-docker-hub:nginx-devops-v$BUILD_NUMBER .'
       }
     }
     stage('Login') {
